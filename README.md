@@ -5,3 +5,5 @@ s = "Ruby on Rails, or Rails, is a server-side web application framework written
 limit = 100
 
 p s[0..limit].split.reverse.drop(1).reverse.join(' ') + '...'
+
+ => "Ruby on Rails, or Rails, is a server-side web application framework written in Ruby under the MIT..."
