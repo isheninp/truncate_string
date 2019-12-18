@@ -11,3 +11,9 @@ OR
  s[0..limit].rpartition(/[\s.,;]+/).first + '...'
 
  => "Ruby on Rails, or Rails, is a server-side web application framework written in Ruby under the MIT..."
+
+```ruby
+def smart_truncate(s, limit)
+  s.length > limit ? s[0..limit].rpartition(/[\s.,;]+/).first + '...' : s
+end
+```
