@@ -6,4 +6,8 @@ limit = 100
 
 p s[0..limit].split.reverse.drop(1).reverse.join(' ') + '...'
 
+OR
+
+ s[0..limit].rpartition(/[\s.,;]+/).first + '...'
+
  => "Ruby on Rails, or Rails, is a server-side web application framework written in Ruby under the MIT..."
